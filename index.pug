@@ -4,17 +4,38 @@ html(lang="ru")
     meta(charset="utf-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title= "Главная страница"
-    link(rel="stylesheet", href="")
+    link(rel="stylesheet", href="./css/reset.css")
+    link(rel="stylesheet", href="css/header.css")
   body
-    header
-      ul
-        li item1
-        li item2
-        li item3
-        li iterm4
-        li item5
-        li item6
-          img(src="", alt="img1")
-        li item7
-          img(src="", alt="img2")
-    footer
+    div.container1440
+      div.overlay-image
+        div.overlay1
+          div.overlay2
+            div.container1110.flexelem
+              header
+                a(href="#").logo Portfolio
+                nav.nav-bar
+                  ul.list
+                    li.item 
+                      a(href="#").item-link Главная
+                    li.item
+                      a(href="#").item-link Обо мне
+                    li.item
+                      a(href="#").item-link Навыки
+                    li.item
+                      a(href="#").item-link Портфолио
+                    li.item
+                      a(href="#").item-link Контакты
+              div.content
+                h1.heading Привет, меня зовут Денис Голубовский
+                p.text junior Frontend-developer
+                a(href="#").link Последние проекты
+
+    section.about
+      div.container1440
+        div.container1110
+          div.about-wrapper
+            h2.heading Обо мне
+            div.wrapper-for-text
+              p.text Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, optio a quisquam illo deleniti facilis eligendi asperiores ratione delectus voluptate?
+              p.text Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime culpa unde molestias repudiandae consectetur ea! Asperiores aut non suscipit corporis.

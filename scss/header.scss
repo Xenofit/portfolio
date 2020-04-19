@@ -1,9 +1,144 @@
-$color: red;
-.heder {
-  color: $color;
+//+++++++++++++COLORS+++++++++++++
+
+$flower-white: rgba(255, 250, 242, 1);
+$signal-black: rgba(51, 51, 51, 1);
+$coral-shadow: rgba(198, 108, 73, 1);
+$brick: rgba(139, 65, 54, 1);
+$white: rgba(255, 255, 255, 1);
+
+/*+++++++++++++Fonts+++++++++++++*/
+
+@font-face {
+  font-family: "LibreFranklin";
+  src: url("../fonts/LibreFranklin.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
-.logo {
-  width: 150px;
-  height: 200px;
+$LF: "LibreFranklin", Geneva, Arial, Helvetica, sans-serif;
+
+body {
+  font-family: $LF;
+}
+
+/*+++++++++++++Styles for content+++++++++++++*/
+.container1440 {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container1110 {
+  max-width: 1110px;
+  height: inherit;
+  margin: 0 auto;
+
+  &.flexelem {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.overlay-image {
+  width: 100%;
+  height: 768px;
+  background: url(/images/bg.png) no-repeat;
+  object-fit: cover;
+  object-position: center;
+
+  & .overlay1 {
+    width: inherit;
+    height: inherit;
+    background: rgba(198, 108, 73, 0.2);
+
+    & .overlay2 {
+      width: inherit;
+      height: inherit;
+      background: rgba(255, 250, 242, 0.1);
+    }
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 93px;
+
+  & .logo {
+    font-size: 24px;
+    line-height: 29px;
+    color: $white;
+  }
+
+  & .nav-bar {
+    & .list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      & .item-link {
+        font-size: 18px;
+        line-height: 22px;
+        color: $white;
+      }
+
+      & .item:not(:last-child) {
+        margin-right: 60px;
+      }
+    }
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 145px 0 auto 0;
+
+  & .heading {
+    font-size: 64px;
+    line-height: 78px;
+    color: $white;
+  }
+
+  & .text {
+    margin: 26px 0 106px 0;
+    font-size: 24px;
+    line-height: 29px;
+    color: $white;
+  }
+
+  & .link {
+    font-size: 18px;
+    line-height: 22px;
+    color: $white;
+    text-decoration: underline;
+  }
+}
+
+.about-wrapper {
+  width: 100%;
+  height: 544px;
+  padding-top: 93px;
+
+  & .heading {
+    font-size: 24px;
+    line-height: 29px;
+    color: $signal-black;
+  }
+
+  & .wrapper-for-text {
+    margin-top: 76px;
+
+    & .text {
+      font-size: 18px;
+      line-height: 30px;
+      color: $signal-black;
+
+      &:first-child {
+        margin-bottom: 40px;
+      }
+    }
+  }
 }

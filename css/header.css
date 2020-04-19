@@ -1,8 +1,157 @@
-.heder {
-  color: red;
+/*+++++++++++++Fonts+++++++++++++*/
+@font-face {
+  font-family: "LibreFranklin";
+  src: url("../fonts/LibreFranklin.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
-.logo {
-  width: 150px;
-  height: 200px;
+body {
+  font-family: "LibreFranklin", Geneva, Arial, Helvetica, sans-serif;
+}
+
+/*+++++++++++++Styles for content+++++++++++++*/
+.container1440 {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container1110 {
+  max-width: 1110px;
+  height: inherit;
+  margin: 0 auto;
+}
+
+.container1110.flexelem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.overlay-image {
+  width: 100%;
+  height: 768px;
+  background: url(/images/bg.png) no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.overlay-image .overlay1 {
+  width: inherit;
+  height: inherit;
+  background: rgba(198, 108, 73, 0.2);
+}
+
+.overlay-image .overlay1 .overlay2 {
+  width: inherit;
+  height: inherit;
+  background: rgba(255, 250, 242, 0.1);
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 93px;
+}
+
+header .logo {
+  font-size: 24px;
+  line-height: 29px;
+  color: white;
+}
+
+header .nav-bar .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .nav-bar .list .item-link {
+  font-size: 18px;
+  line-height: 22px;
+  color: white;
+}
+
+header .nav-bar .list .item:not(:last-child) {
+  margin-right: 60px;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 145px 0 auto 0;
+}
+
+.content .heading {
+  font-size: 64px;
+  line-height: 78px;
+  color: white;
+}
+
+.content .text {
+  margin: 26px 0 106px 0;
+  font-size: 24px;
+  line-height: 29px;
+  color: white;
+}
+
+.content .link {
+  font-size: 18px;
+  line-height: 22px;
+  color: white;
+  text-decoration: underline;
+}
+
+.about-wrapper {
+  width: 100%;
+  height: 544px;
+  padding-top: 93px;
+}
+
+.about-wrapper .heading {
+  font-size: 24px;
+  line-height: 29px;
+  color: #333333;
+}
+
+.about-wrapper .wrapper-for-text {
+  margin-top: 76px;
+}
+
+.about-wrapper .wrapper-for-text .text {
+  font-size: 18px;
+  line-height: 30px;
+  color: #333333;
+}
+
+.about-wrapper .wrapper-for-text .text:first-child {
+  margin-bottom: 40px;
 }
