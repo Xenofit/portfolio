@@ -1,0 +1,25 @@
+{
+  "name": "portfolio.local",
+  "version": "1.0.0",
+  "description": "The file is empty",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel index.pug",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xenofit/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Xenofit/portfolio/issues"
+  },
+  "homepage": "https://github.com/Xenofit/portfolio#readme",
+  "devDependencies": {
+    "pug": "^2.0.4"
+  }
+}
